@@ -28,3 +28,7 @@
       .row
         .span12.well
           %h1= "hello"
+
+    %form{:action => "https://github.com/login/oauth/authorize", :method => "GET"}
+      %input{:type => "hidden", :name => "client_id", :value => "6f4011963231c485bd43"}
+      %input{:type => "submit", :value => "login to github"}
