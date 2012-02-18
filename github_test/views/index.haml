@@ -1,0 +1,30 @@
+%html
+  %head
+    %title= "win"
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/style.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/bootstrap.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/bootstrap-responsive.css"}
+    %script{:type => "text/javascript", :src => "/js/bootstrap.js"}
+
+  %body
+    %header.navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.btn.btn-navbar{:data => {:toggle => "collapse", :target => ".nav-collapse"}}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand= "Fancy Github Test"
+          .nav-collapse
+            %ul.nav
+              %li.active
+                %a{:href => "/"}= "Home"
+
+    .container{:style => "margin-top: 50px;"}
+      .row
+        .span12.well
+          %h1= "hello"
