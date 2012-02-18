@@ -12,5 +12,5 @@ get '/css/style.css' do
 end
 
 get '/github' do
-  puts params
+
 end
