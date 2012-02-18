@@ -1,0 +1,7 @@
+file 'start' => ['main.rb', 'Gemfile', 'config.yml', 'config.ru'] do
+	sh 'thin -s 2 -C config.yml -R config.ru start'
+end
+
+file 'stop' => ['thin.4567.pid', 'thin.4568.pid'] do
+	sh 'thin --pid thin.4567.pid stop && thin --pid thin.4568.pid stop'
+end 

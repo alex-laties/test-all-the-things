@@ -1,0 +1,8 @@
+gem 'sinatra'
+gem 'rake'
+gem 'twilio-ruby'
+gem 'haml'
+gem 'sass'
+gem 'thin'
+source :gemcutter
+gem 'twitter_oauth'

@@ -1,0 +1,13 @@
+environment: production
+chdir: /home/ag/test-all-the-things/github_test
+address: 127.0.0.1
+user: ag
+group: ag
+port: 4567
+pid: /home/ag/test-all-the-things/github_test/thin.pid
+rackup: /home/ag/test-all-the-things/github_test/config.ru
+log: /home/ag/test-all-the-things/github_test/thin.log
+max_conns: 1024
+timeout: 30
+max_persistent_conns: 512
+daemonize: true
